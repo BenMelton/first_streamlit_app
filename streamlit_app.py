@@ -67,7 +67,6 @@ if add_my_fruit:
 # my_cur = my_cnx.cursor()
 # my_cur.execute("insert into fruit_load_list (FRUIT_NAME) values ('{fruit}')".format(fruit=add_my_fruit))
 # my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-
-        my_cur.execute("insert into fruit_load_list values ( '" + new_fruit + "')")  
+my_cur.execute("insert into fruit_load_list values ( '" + new_fruit + "')")  
     streamlit.write('Thanks for adding ', add_my_fruit)
   
